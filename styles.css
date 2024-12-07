@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Password Input Section */
+.password-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.password-input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.password-input button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Analyze Button */
+.analyze-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.analyze-btn button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.analyze-btn button:hover {
+    background-color: #45a049;
+}
+
+/* Results Display Section */
+#results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#strength-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul#recommendations {
+    list-style-type: none;
+    padding: 0;
+    color: #555;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+ul#recommendations li {
+    margin-bottom: 10px;
+}
+
+/* Strength Level Colors */
+#strength-text.weak {
+    color: red;
+}
+
+#strength-text.moderate {
+    color: orange;
+}
+
+#strength-text.strong {
+    color: green;
+}
+
+/* Security Tips Section */
+.security-tips {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.security-tips h4 {
+    margin-top: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.security-tips ul {
+    padding-left: 20px;
+}
+
+.security-tips li {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .password-input input {
+        padding: 12px;
+    }
+
+    .analyze-btn button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
